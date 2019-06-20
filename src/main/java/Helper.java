@@ -6,13 +6,11 @@ import java.util.Scanner;
 
 class Helper
 {
-
     static Map<String, Country> fileToMap(String fileName) throws FileNotFoundException {
         File file = new File(fileName);
         Scanner sc = new Scanner(file);
 
         Map<String, Country> map = new HashMap<>();
-
         sc.nextLine();
 
         while (sc.hasNextLine()) {
@@ -29,7 +27,6 @@ class Helper
         Scanner sc = new Scanner(System.in);
         System.out.println("Podaj kod kraju, o którym chcesz zobaczyć informacje w formacie ISO-2");
         return sc.nextLine();
-
     }
 
     static boolean isCodeCorrect(String code){

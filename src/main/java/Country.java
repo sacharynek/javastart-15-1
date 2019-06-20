@@ -8,10 +8,8 @@ import lombok.Setter;
 @Getter
 @Setter
 @EqualsAndHashCode
-
 @AllArgsConstructor
 @NoArgsConstructor
-
 public class Country {
 
     private String iso;
@@ -22,5 +20,4 @@ public class Country {
     public String toString(){
         return this.country + " ("+this.iso+") ma "+this.population+" ludności";
     }
-
 }

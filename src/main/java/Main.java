@@ -13,8 +13,6 @@ public class Main {
             code = Helper.getCountryCodeFromUser();
 
         }
-
         System.out.println(map.get(code));
-
     }
 }
